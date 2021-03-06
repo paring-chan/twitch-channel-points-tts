@@ -6,7 +6,8 @@ module.exports = {
   mount: {
     src: {
       url: '/',
-      static: true
+      static: true,
+      resolve: false
     }
   },
   plugins: [
