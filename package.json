@@ -1,13 +1,12 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "snowpack dev --polyfill-node",
+    "build": "snowpack build --polyfill-node",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "google-tts-api": "^2.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "tmi.js": "^1.7.2"
