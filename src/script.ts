@@ -2,6 +2,18 @@ const params = new URLSearchParams(window.location.search)
 
 let shouldReturn = false
 
+const queue: string[] = []
+
+const audio = new Audio()
+
+audio.onended = ev => {
+    const item = queue.shift()
+    if (item) {
+        audio.src = item
+        audio.play()
+    }
+}
+
 for (const i of ['channel']) {
     if (!params.get(i)) {
         alert(`Param ${i} is required.`)
