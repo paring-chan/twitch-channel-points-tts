@@ -23,6 +23,12 @@ if (!shouldReturn) {
                 console.log(tags['custom-reward-id'])
             }
             if (tags['custom-reward-id'] === params.get('reward_id')) {
+                const speech = new SpeechSynthesisUtterance(msg)
+                speech.rate = 1
+                speech.lang = 'ko-KR'
+                speech.pitch = 1
+
+                speechSynthesis.speak(speech)
             }
         })
     })()
