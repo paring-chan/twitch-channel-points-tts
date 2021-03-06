@@ -1,14 +1,3 @@
 {
-  "name": "twitch-channel-points-tts",
-  "version": "1.0.0",
-  "repository": "https://github.com/pikokr/twitch-channel-points-tts.git",
-  "author": "pikokr <parangee9706@gmail.com>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "dev": "parcel ./src/index.html"
-  },
-  "devDependencies": {
-    "parcel": "^1.12.4"
-  }
+  "private": true
 }
